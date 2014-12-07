@@ -1,0 +1,8 @@
+source("cachematrix.R")
+amatrix = makeCacheMatrix(matrix(c(1,2,3,4), nrow=2, ncol=2))
+amatrix$get()
+cacheSolve(amatrix)
+amatrix$getinvs()
+cacheSolve(amatrix)
+amatrix$set(matrix(c(0,5,99,66), nrow=2, ncol=2))
+
